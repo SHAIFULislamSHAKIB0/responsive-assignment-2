@@ -14,12 +14,12 @@ body{
     width: 1440px;
     height: 677px;
     /* margin: 0; */
-    left: 0px;
-    top: 0px;
+    /* left: 0px;
+    top: 0px; */
 }
 
 .top-container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,1fr);
     
     
@@ -126,4 +126,70 @@ body{
 main{
     display: flex;
     justify-content: center;
+}
+
+
+
+/* Footer design start */
+footer{
+    position: relative;
+    top: 200px;
+    left: 400px;
+    
+}
+.foot-image img{
+    width: 450px;
+    height: 100px;
+}
+.contact-icon{
+    width: 170px;
+    width: 30px;
+    display: flex;
+    position: relative;
+    left: 150px;
+    margin-top: 20px;
+}
+.contact-icon i{
+    padding: 10px;
+    background-color: rgb(221, 212, 212);
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.copyright{
+    width: 230px;
+    height: 32px;
+    margin-top: 20px;
+    position: relative;
+    left: 140px;
+    padding-bottom: 60px;
+}
+
+/* Media queries  */
+/* mobile devices */
+
+@media only screen and (max-width:688px){
+    .top-head{
+        width: 100%;
+     
+    }
+    .my-foot{
+        width: 100%;
+    }
+    .players, .my-foot{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .players{
+        flex-direction: column;
+    }   
+}
+@media screen and (min-width: 688px) and (max-width: 889px){
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .top-head{
+        width: 100%;
+        align-items: center;
+    }
 }
